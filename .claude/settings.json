@@ -26,5 +26,19 @@
       "description": "Reward verification agent (Discriminator). Generates reward scripts with progressive 0.0-1.0 scoring, tests against golden and initial files, and writes structured REVIEW.md verdicts.",
       "prompt": ".claude/agents/reward-gen.md"
     }
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=$(jq -r '.tool_input.file_path // .tool_response.filePath // empty' 2>/dev/null); case \"$f\" in */CLAUDE.md) : ;; *.py) jq -n --arg f \"$f\" '{hookSpecificOutput:{hookEventName:\"PostToolUse\",additionalContext:(\"Code file changed: \"+$f+\". RULE: if this change affects CUA-Gym architecture, pipeline behavior, conventions, commands, env vars, or invariants, update CLAUDE.md (and the project memory) to match before finishing this turn. If it is a no-op for docs, ignore.\")}}' 2>/dev/null;; esac; true",
+            "statusMessage": "Checking if CLAUDE.md needs an update"
+          }
+        ]
+      }
+    ]
   }
 }
