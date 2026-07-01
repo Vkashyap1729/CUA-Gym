@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_025",
+  "instruction": "Clean up the \"Archive\" workspace: delete \"Draft A\" and \"Draft B\", but keep \"Draft C\".",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

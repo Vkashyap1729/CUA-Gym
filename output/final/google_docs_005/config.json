@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_005",
+  "instruction": "Create a brand-new blank document titled \"Weekly Standup Agenda\".",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

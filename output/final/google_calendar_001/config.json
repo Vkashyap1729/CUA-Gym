@@ -1,0 +1,18 @@
+{
+  "id": "google_calendar_001",
+  "instruction": "Add a new event called \"Dentist Appointment\" on March 18, 2026 from 2:00 PM to 3:00 PM.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

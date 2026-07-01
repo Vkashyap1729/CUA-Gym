@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_022",
+  "instruction": "Lower the link-sharing permission on \"Public Roadmap\" from editor down to commenter \u2014 people should comment but not edit.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_030",
+  "instruction": "Reply \"Done \u2014 updated in the latest version.\" to Alice's comment on \"Translation Strings\" and then mark that comment as resolved.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

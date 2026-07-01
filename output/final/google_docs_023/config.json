@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_023",
+  "instruction": "Star both \"Q1 OKRs\" and \"Q2 OKRs\" so the quarterly goal docs stay at the top.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

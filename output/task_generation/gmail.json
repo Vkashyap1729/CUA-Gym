@@ -1,0 +1,274 @@
+[
+  {
+    "task_id": "gmail_001",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Star the email from Alice Chen about the quarterly budget so I can find it later.",
+    "context": "Initial state: inbox contains 4 emails, all starred=false. email_1 from Alice Chen (alice.chen@finance.co), subject 'Q3 Quarterly Budget Review', timestamp 2026-06-20T09:15:00Z, folder inbox. Distractors that must stay untouched: email_2 from Bob Ng subject 'Team lunch Friday', email_3 from Alice Chen subject 'Out of office next week' (same sender, different subject \u2014 must NOT be starred), email_4 from newsletter@retail.com subject 'Summer Sale'. Expected end state: email_1.starred becomes true; all other emails' starred flags remain false; no other field changes anywhere.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_002",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Open and read the message from IT Support about the password reset.",
+    "context": "Initial state: inbox contains 5 emails. email_2 from IT Support (it-support@corp.com), subject 'Action required: reset your password', read=false, folder inbox, timestamp 2026-06-28T14:02:00Z. Distractors: email_1 (from HR, read=false), email_3 (from IT Support subject 'Scheduled maintenance Saturday', read=false \u2014 same sender, must stay unread), email_4 and email_5 both read=false. Expected end state: email_2.read becomes true; every other email retains read=false; no folder/star/label changes.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_003",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "That promotional email from ShopMart is junk \u2014 move it to trash.",
+    "context": "Initial state: inbox contains 4 emails. email_4 from ShopMart Deals (deals@shopmart.com), subject '70% off everything this weekend', category promotions, folder inbox. Distractors: email_1 from a real colleague, email_2 a bank statement notice, email_3 from RetailPlus subject 'Your order shipped' (also a retailer but a legitimate order confirmation \u2014 must stay in inbox). Expected end state: email_4.folder becomes 'trash'; all other emails remain folder 'inbox'; no other changes.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_004",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Report the message pretending to be from my bank as spam.",
+    "context": "Initial state: inbox contains 4 emails. email_3 from 'SecureBank Alerts' (alerts@secure-bank-verify.net), subject 'Unusual login detected \u2014 verify now', folder inbox. Distractors: email_1 a genuine invoice, email_2 from a coworker, email_4 from SecureBank's real domain (alerts@securebank.com) subject 'Monthly statement ready' which is legitimate and must stay in inbox. Expected end state: email_3.folder becomes 'spam'; email_4 and all others remain folder 'inbox'; no other field changes.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_005",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Apply my 'Travel' label to the flight confirmation from SkyJet.",
+    "context": "Initial state: default labels present (l1 Work, l2 Personal, l3 Travel, l4 Finance). inbox has 4 emails. email_2 from SkyJet Airlines (booking@skyjet.com), subject 'Your flight to Denver is confirmed', labels [] currently. Distractors: email_1 already has label l1 (Work) which must be preserved, email_3 from a hotel subject 'Reservation reminder' (travel-related but NOT the flight confirmation \u2014 must stay unlabeled), email_4 unlabeled. Expected end state: email_2.labels becomes ['l3']; email_1.labels stays ['l1']; email_3 and email_4 stay []; no other changes.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_006",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Reply to Priya's email about the design review and let her know I can make the 3pm slot on Thursday.",
+    "context": "Initial state: inbox contains email_1 from Priya Raman (priya@studio.design), subject 'Design review scheduling', threadId thread_1, timestamp 2026-06-29T10:00:00Z, folder inbox. Two distractor inbox emails from other senders. sent folder currently has no reply to Priya. Expected end state: a NEW email added with folder 'sent', from the demo user (demo@example.com), to [{Priya Raman, priya@studio.design}], threadId thread_1, subject referencing the design review (e.g. 'Re: Design review scheduling'), and body confirming availability for the 3pm Thursday slot. Original email_1 unchanged; distractor emails untouched; no draft created.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_007",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Draft an email to the vendor procurement@acmesupplies.com requesting an updated price quote for 200 office chairs, but don't send it yet.",
+    "context": "Initial state: drafts array is empty; inbox has 3 unrelated emails (distractors that must stay untouched); sent folder unchanged. Expected end state: a new draft object added to the drafts array (folder 'drafts') with to [{email procurement@acmesupplies.com}], a subject about a price quote / office chairs, and a body requesting an updated quote for 200 office chairs. NO email appears in the sent folder (must not be sent). Inbox distractors unchanged.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_008",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Clean up my inbox: mark the two unread newsletters as read and archive them.",
+    "context": "Initial state: inbox has 5 emails. email_2 from 'Weekly Tech Digest' (news@techdigest.io) read=false, and email_4 from 'Marketing Weekly' (hello@mktgweekly.com) read=false \u2014 both newsletters. Distractors: email_1 from a manager read=false (a real work email, must stay in inbox and unread), email_3 read=true already, email_5 from a friend read=false. Expected end state: email_2 and email_4 each have read=true AND folder='archive'; email_1, email_3, email_5 keep their original read status and remain folder 'inbox'; no star/label/trash changes.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_009",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Flag the contract email from Legal as important and star it so it stands out.",
+    "context": "Initial state: inbox has 4 emails, all with important=false and starred=false. email_3 from Legal Department (legal@corp.com), subject 'Signed vendor contract \u2014 please retain', folder inbox. Distractors: email_1 from Legal subject 'Policy update FYI' (same sender, low priority \u2014 must NOT be flagged or starred), email_2 and email_4 from other senders. Expected end state: email_3.important becomes true AND email_3.starred becomes true; all other emails keep important=false and starred=false; no folder/label/read changes.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_010",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Empty spam: permanently delete every email currently sitting in the spam folder.",
+    "context": "Initial state: spam folder contains exactly 2 emails \u2014 email_5 from 'Prize Notify' (win@luckydraw.info) subject 'You won a $1000 gift card', and email_6 from 'Crypto Alerts' (promo@coinblast.biz) subject 'Double your investment'. inbox contains 3 legitimate emails (email_1, email_2, email_3) that are distractors and must remain untouched. trash folder is empty. Expected end state: email_5 and email_6 are removed entirely from the emails array (they appear in state_diff.deletedEmails, NOT merely moved to trash); inbox emails unchanged; no other emails deleted.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_011",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Forward the project brief from Marcus to my teammate dana@corp.com, keep Marcus on cc, and label the original as Work.",
+    "context": "Initial state: default labels present. inbox has 4 emails. email_1 from Marcus Lee (marcus@corp.com), subject 'Project Atlas brief', threadId thread_9, body containing the brief text, labels [] currently, folder inbox. Distractors: email_2 from Marcus subject 'Coffee?' (same sender, personal \u2014 must not be forwarded or labeled), email_3 and email_4 unrelated. Expected end state: (1) a NEW email in folder 'sent' from demo@example.com, to [{dana@corp.com}], cc including marcus@corp.com, subject a forward of the brief (e.g. 'Fwd: Project Atlas brief'), body carrying the original brief content; (2) email_1.labels becomes ['l1'] (Work). Original email_1 otherwise unchanged; email_2/email_3/email_4 untouched; no draft left behind.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "gmail_012",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Triage the three invoice emails from Finance: star the overdue one, move the already-paid one to trash, and leave the pending one exactly as it is.",
+    "context": "Initial state: inbox has 5 emails; three are from Finance Dept (finance@corp.com): email_1 subject 'Invoice #4471 \u2014 OVERDUE, payment required' (starred=false, folder inbox), email_2 subject 'Invoice #4468 \u2014 PAID, receipt attached' (starred=false, folder inbox), email_3 subject 'Invoice #4472 \u2014 pending approval' (starred=false, folder inbox). Distractors: email_4 and email_5 from non-Finance senders that must stay untouched. Expected end state: email_1.starred becomes true (folder stays inbox); email_2.folder becomes 'trash' (starred stays false); email_3 completely unchanged (starred=false, folder inbox); email_4 and email_5 unchanged. No labels or read-status changes anywhere.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "gmail_013",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Star the email from Alice Smith about the Q4 roadmap so I can find it later.",
+    "context": "INITIAL: Inbox contains 4 emails, all starred:false. (1) email_1 from Alice Smith <alice@company.com>, subject 'Q4 Project Roadmap Update', folder inbox, read false. (2) email_2 from Bob Lee <bob@vendor.io>, subject 'Invoice #2291 due', folder inbox. (3) email_3 from Carol Ng <carol@company.com>, subject 'Q3 roadmap retro notes', folder inbox (distractor: mentions 'roadmap' but is Q3, must stay starred:false). (4) email_4 from newsletter@promos.com, subject 'Weekly deals', folder inbox, category promotions. EXPECTED: email_1.starred becomes true; all other emails unchanged (email_3 stays starred:false, no folder/read changes anywhere).",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_014",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Open and read the unread message from the recruiter.",
+    "context": "INITIAL: Inbox has 3 emails. (1) email_1 from Dana Recruiter <dana@talenthub.co>, subject 'Interview scheduling for Senior Engineer role', read false, folder inbox. (2) email_2 from Dana Recruiter <dana@talenthub.co>, subject 'Re: your application', read true already (distractor: same sender but already read, must stay read:true). (3) email_3 from team@updates.com, subject 'Sprint summary', read false (distractor: different sender, must stay read:false). EXPECTED: email_1.read becomes true; email_2 stays read:true; email_3 stays read:false; no other fields change.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_015",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "That message from the crypto-lottery sender is junk \u2014 move it to spam.",
+    "context": "INITIAL: Inbox has 3 emails. (1) email_1 from prize@crypto-lottery-win.biz, subject 'You WON 5 BTC \u2014 claim now', folder inbox, category promotions. (2) email_2 from hr@company.com, subject 'Benefits enrollment', folder inbox (distractor, legit, must stay in inbox). (3) email_3 from billing@saas-tool.com, subject 'Payment received', folder inbox (distractor). EXPECTED: email_1.folder becomes 'spam'; email_2 and email_3 remain folder:'inbox'; no reads/stars change.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_016",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Delete the old 'Weekly deals' promo from my inbox \u2014 I don't need it anymore.",
+    "context": "INITIAL: Inbox has 3 emails. (1) email_1 from deals@shopmart.com, subject 'Weekly deals', folder inbox, category promotions. (2) email_2 from deals@shopmart.com, subject 'Weekly deals \u2014 LAST CHANCE', folder inbox (distractor: similar sender/subject but a different message, must remain). (3) email_3 from alice@company.com, subject 'Standup notes', folder inbox (distractor). EXPECTED: email_1 moved to folder:'trash' (or removed from inbox); email_2 and email_3 unchanged in inbox. Only the plain 'Weekly deals' message is affected.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_017",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Reply to Bob's invoice email letting him know payment will be sent by Friday.",
+    "context": "INITIAL: Inbox has email_1 from Bob Lee <bob@vendor.io>, subject 'Invoice #2291 due', threadId thread_bob, folder inbox, read false. Also email_2 from Priya <priya@vendor.io>, subject 'Invoice #2288', folder inbox (distractor: different invoice, must not be replied to). Sent folder empty. User is Demo User <demo@example.com>. EXPECTED: a new email added with folder:'sent', from Demo User, to Bob Lee <bob@vendor.io>, subject beginning 'Re:' referencing invoice/2291, body communicating payment will be sent by Friday, threadId thread_bob. email_2 receives no reply. Original email_1 preserved.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_018",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Apply the Finance label to the invoice email from the vendor.",
+    "context": "INITIAL: Labels default set (l1 Work, l2 Personal, l3 Travel, l4 Finance). Inbox has 3 emails. (1) email_1 from bob@vendor.io, subject 'Invoice #2291 due', folder inbox, labels ['l1'] (currently Work). (2) email_2 from carol@company.com, subject 'Team lunch', folder inbox, labels [] (distractor, no label change). (3) email_3 from bank@mybank.com, subject 'Statement ready', folder inbox, labels ['l4'] already Finance (distractor: already has Finance, unchanged). EXPECTED: email_1.labels becomes ['l1','l4'] (Finance added, Work retained); email_2.labels stays []; email_3.labels stays ['l4'].",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_019",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Compose and send a new email to hr@company.com requesting Friday off for a doctor's appointment.",
+    "context": "INITIAL: Sent folder empty, drafts empty. User Demo User <demo@example.com>. Inbox has 2 unrelated emails (email_1 from alice@company.com 'Standup', email_2 from newsletter@promos.com) that must remain untouched. EXPECTED: a new email in folder:'sent' with from Demo User, to hr@company.com, a subject indicating a time-off / leave / day-off request, and a body requesting Friday off for a doctor's appointment. No draft left behind; inbox emails unchanged.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_020",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Archive every email in my inbox from the domain @newsletters.co, and leave everything else in the inbox.",
+    "context": "INITIAL: Inbox has 5 emails. (1) email_1 from digest@newsletters.co 'Monday digest', inbox. (2) email_2 from weekly@newsletters.co 'Product weekly', inbox. (3) email_3 from promo@newsletters.co.uk 'Sale' (distractor: domain is newsletters.co.uk, NOT newsletters.co \u2014 must stay in inbox). (4) email_4 from alice@company.com 'Design review', inbox (distractor). (5) email_5 from bob@newsletters.co 'Community update', inbox. EXPECTED: email_1, email_2, email_5 folder becomes 'archive'; email_3 and email_4 remain folder:'inbox'. No other field changes.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_021",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Save a draft to alice@company.com titled 'Budget proposal' with a note that I'll send full numbers next week \u2014 don't send it yet.",
+    "context": "INITIAL: drafts array empty. Sent folder empty. Inbox has email_1 from alice@company.com 'Re: Budget', folder inbox (context, unchanged). User Demo User <demo@example.com>. EXPECTED: a new entry in the drafts array (NOT in emails/sent) with to alice@company.com, subject 'Budget proposal', body noting full numbers will be sent next week. Nothing added to folder:'sent'; inbox email_1 unchanged.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_022",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Clean up my starred items: unstar the two promotional emails but keep the work email starred, then mark the work email as important.",
+    "context": "INITIAL: Inbox has 3 starred emails (all starred:true, important:false). (1) email_1 from deals@shop.com 'Flash sale', category promotions, starred true. (2) email_2 from offers@retail.com 'Coupon inside', category promotions, starred true. (3) email_3 from manager@company.com 'Perf review draft', category primary, starred true. Also email_4 from spam@x.com not starred (distractor, no change). EXPECTED: email_1.starred false, email_2.starred false; email_3.starred stays true AND email_3.important becomes true; email_4 unchanged. No folder or read changes.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "gmail_023",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Go through the inbox and file every message from a company.com colleague under the Work label, marking each as read; leave external-sender emails alone.",
+    "context": "INITIAL: Labels default (l1 Work). Inbox has 5 emails, all read:false, labels []. (1) email_1 from alice@company.com 'Sprint plan'. (2) email_2 from bob@company.com 'Deploy window'. (3) email_3 from carol@company.com 'PR review'. (4) email_4 from vendor@outside.io 'Quote' (distractor: external, must stay read:false, labels []). (5) email_5 from noreply@company-news.com 'Industry roundup' (distractor: domain company-news.com is NOT company.com, must stay untouched). EXPECTED: email_1, email_2, email_3 each get labels containing 'l1' AND read:true; email_4 and email_5 remain read:false with labels []. No folder/star changes.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "gmail_024",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Recover the accidentally-trashed message from the client and get it back into the inbox as an unread, starred email, then permanently delete the actual phishing message that's still in trash.",
+    "context": "INITIAL: Trash folder has 2 emails. (1) email_1 from client@bigco.com, subject 'Contract signed \u2014 next steps', folder trash, read true, starred false (this was trashed by mistake). (2) email_2 from security@paypa1-verify.com, subject 'Verify your account NOW', folder trash (genuine phishing, to be permanently deleted). Inbox has email_3 from alice@company.com 'FYI' (distractor, unchanged). EXPECTED: email_1.folder becomes 'inbox', read becomes false, starred becomes true; email_2 permanently removed from the emails array (appears in state_diff.deletedEmails); email_3 unchanged.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "gmail_025",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Star the email from Alice Smith about the Q4 budget review.",
+    "context": "INITIAL: Inbox has 4 unread emails, none starred: email_1 from Alice Smith (alice@company.com), subject 'Q4 Budget Review', starred:false, folder:inbox; email_2 from Bob Lee (bob@vendor.com), subject 'Invoice #4471'; email_3 from Alice Smith (alice@company.com), subject 'Team Lunch Friday' (distractor \u2014 same sender, different subject, must stay unstarred); email_4 from newsletter@promos.com, subject 'Weekly Deals', category:promotions. EXPECTED: email_1.starred becomes true. All other emails' starred flags unchanged (email_3 stays starred:false). No email is read, moved, or deleted.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_026",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Open and read the message with the subject 'Server maintenance window'.",
+    "context": "INITIAL: Inbox has 3 unread emails: email_1 from ops@company.com, subject 'Server maintenance window', read:false, folder:inbox; email_2 from hr@company.com, subject 'Benefits enrollment', read:false (distractor, must stay unread); email_3 from ops@company.com, subject 'Server upgrade complete', read:false (distractor \u2014 same sender, similar subject, must stay unread). EXPECTED: email_1.read becomes true. email_2 and email_3 remain read:false. No starring, moving, labeling, or deletion.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_027",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Move the 'Weekly Deals' promotional email to spam.",
+    "context": "INITIAL: Inbox has: email_1 from newsletter@shopmart.com, subject 'Weekly Deals - 50% off', category:promotions, folder:inbox; email_2 from newsletter@shopmart.com, subject 'Your order shipped', folder:inbox (distractor \u2014 same sender, legitimate, must stay in inbox); email_3 from manager@company.com, subject 'Deals proposal draft', folder:inbox (distractor \u2014 subject contains 'Deals' but is a real work email, stays in inbox). EXPECTED: email_1.folder becomes 'spam'. email_2 and email_3 stay folder:inbox. No other changes.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "gmail_028",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Apply the 'Finance' label to the invoice email from the vendor.",
+    "context": "INITIAL: labels include l1 Work, l2 Personal, l3 Travel, l4 Finance. Inbox emails: email_1 from billing@acmevendor.com, subject 'Invoice #8823 due', labels:[], folder:inbox; email_2 from alice@company.com, subject 'Q3 planning', labels:['l1'] (distractor, keeps only l1); email_3 from billing@acmevendor.com, subject 'Statement summary', labels:[] (distractor \u2014 same sender, not an invoice, stays unlabeled). EXPECTED: email_1.labels contains 'l4' (Finance) added to existing (result: ['l4']). email_2.labels stays ['l1']; email_3.labels stays []. No emails moved/read/deleted.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_029",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Reply to Carol's email confirming that you will attend the Thursday design review.",
+    "context": "INITIAL: Inbox email_1 from Carol Nguyen (carol@company.com), threadId 'thread_5', subject 'Design review Thursday 2pm', body asking if you can attend, folder:inbox, read:false. Distractor email_2 from dave@company.com, subject 'Design review notes', folder:inbox (unrelated, no reply expected). User is demo@example.com 'Demo User'. EXPECTED: a new email added with folder:'sent', threadId 'thread_5' (same thread), to Carol Nguyen (carol@company.com), subject like 'Re: Design review Thursday 2pm', body affirmatively confirming attendance. Reading email_1 is acceptable. email_2 untouched, no new email sent to dave.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_030",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Compose and send a new email to jordan@partner.com with the subject 'Kickoff scheduling' asking for their availability next week.",
+    "context": "INITIAL: Inbox has 2 unrelated emails (email_1 from alice@company.com 'Weekly sync', email_2 from bob@company.com 'Retro notes') that must remain untouched. drafts:[]. User is demo@example.com. EXPECTED: a new email added with folder:'sent', to:[{email:'jordan@partner.com'}], subject exactly 'Kickoff scheduling', body requesting availability for next week. No reply to existing emails; email_1/email_2 unchanged; drafts stays empty (this is a sent email, not a draft).",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_031",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Clean up the inbox: move all three emails from the recruiter noreply@jobspam.io to trash, and mark the email from your manager as important.",
+    "context": "INITIAL: Inbox: email_1 from noreply@jobspam.io subj 'Exciting opportunity', email_2 from noreply@jobspam.io subj 'Follow up', email_3 from noreply@jobspam.io subj 'Last chance' (all folder:inbox); email_4 from manager@company.com subj 'Your Q4 objectives', important:false, folder:inbox; email_5 from teammate@company.com subj 'Lunch?' folder:inbox (distractor, stays put, not important, not trashed). EXPECTED: email_1, email_2, email_3 all have folder:'trash'. email_4.important becomes true (stays folder:inbox). email_5 unchanged. No emails deleted permanently.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "gmail_032",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Save a draft email to the whole finance team (ana@company.com and paul@company.com) with subject 'Expense report reminder' reminding them the report is due Friday. Do not send it.",
+    "context": "INITIAL: drafts:[]. Inbox has one unrelated email email_1 from ops@company.com 'System status' that must stay untouched. User is demo@example.com. EXPECTED: drafts array gains one draft object with to including ana@company.com and paul@company.com, subject exactly 'Expense report reminder', body reminding the report is due Friday. NO email with folder:'sent' is created (it must remain a draft, not sent). email_1 unchanged.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "gmail_033",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Permanently delete the phishing email currently sitting in the Spam folder from security-alert@paypa1.com.",
+    "context": "INITIAL: email_1 folder:'spam' from security-alert@paypa1.com (note the '1' typosquat), subject 'Verify your account now'; email_2 folder:'spam' from deals@marketing.net subject 'Big sale' (distractor \u2014 also spam but legitimate marketing, must remain in spam, NOT deleted); email_3 folder:'inbox' from security-alert@paypal.com (legitimate lookalike, distractor, must stay in inbox untouched). EXPECTED: email_1 is removed from the emails array entirely (appears in state_diff.deletedEmails). email_2 stays folder:'spam'; email_3 stays folder:'inbox'. No other emails deleted or moved.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "gmail_034",
+    "domain": "mock_websites",
+    "app": "gmail",
+    "task_instruction": "Reorganize the two flagged project emails: remove the 'Personal' label from both, add the 'Work' label to both, and star the one from the project lead.",
+    "context": "INITIAL: labels l1 Work (red), l2 Personal (blue). Inbox: email_1 from lead@company.com subj 'Project Atlas milestone', labels:['l2'], starred:false; email_2 from dev@company.com subj 'Project Atlas code freeze', labels:['l2'], starred:false; email_3 from friend@personal.com subj 'Weekend plans', labels:['l2'], starred:false (distractor \u2014 keeps l2, stays unlabeled-changed, not starred, not given l1). EXPECTED: email_1.labels becomes ['l1'] (l2 removed, l1 added) and email_1.starred becomes true (it is from the project lead). email_2.labels becomes ['l1'] (l2 removed, l1 added), email_2.starred stays false. email_3.labels stays ['l2'], starred stays false. No emails moved/deleted.",
+    "difficulty": "hard"
+  }
+]

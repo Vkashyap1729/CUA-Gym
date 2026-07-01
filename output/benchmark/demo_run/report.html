@@ -1,0 +1,29 @@
+<title>CUA-Gym Benchmark Report</title>
+<style>
+body{font:15px -apple-system,Segoe UI,Roboto,sans-serif;background:#0f1117;color:#e6e9ef;margin:0;padding:32px 20px}
+.wrap{max-width:980px;margin:0 auto} h1{font-size:24px} h2{font-size:17px;border-bottom:1px solid #262b36;padding-bottom:6px;margin-top:28px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px} th,td{padding:8px 11px;border-bottom:1px solid #262b36;text-align:right}
+th:first-child,td:first-child{text-align:left} th{color:#8b93a3} .scroll{overflow-x:auto}
+code{background:#0b0d12;border:1px solid #262b36;border-radius:4px;padding:1px 6px}
+.pill{padding:1px 9px;border-radius:20px;font-size:12px;font-weight:600}
+.cards{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0} .card{background:#181b23;border:1px solid #262b36;border-radius:10px;padding:14px 18px;flex:1;min-width:130px}
+.card .n{font-size:24px;font-weight:700} .card .l{color:#8b93a3;font-size:13px}
+</style>
+<div class="wrap">
+<h1>CUA-Gym Benchmark Report</h1>
+<div class="cards">
+  <div class="card"><div class="n">6</div><div class="l">tasks</div></div>
+  <div class="card"><div class="n">4</div><div class="l">models</div></div>
+  <div class="card"><div class="n">120</div><div class="l">rollouts</div></div>
+  <div class="card"><div class="n" style="color:#fbbf24">1</div><div class="l">model-breaking</div></div>
+  <div class="card"><div class="n" style="color:#f87171">1</div><div class="l">broken</div></div>
+</div>
+<h2>Model leaderboard <span style="color:#8b93a3;font-weight:400">(failures broken down by type)</span></h2>
+<div class="scroll"><table>
+<thead><tr><th>Model</th><th>Pass</th><th>Mean rwd</th><th>Fails</th><th>zero</th><th>partial</th><th>trunc</th><th>error</th><th>timeout</th><th>Steps</th></tr></thead>
+<tbody><tr><td>claude-opus</td><td>57%</td><td>0.62</td><td>13</td><td>0</td><td>4</td><td>7</td><td>2</td><td>0</td><td>5.1</td></tr><tr><td>claude-sonnet</td><td>43%</td><td>0.52</td><td>17</td><td>0</td><td>5</td><td>9</td><td>3</td><td>0</td><td>5.0</td></tr><tr><td>openai-cua</td><td>33%</td><td>0.39</td><td>20</td><td>0</td><td>4</td><td>11</td><td>4</td><td>1</td><td>4.9</td></tr><tr><td>claude-haiku</td><td>27%</td><td>0.36</td><td>22</td><td>0</td><td>6</td><td>12</td><td>3</td><td>1</td><td>4.9</td></tr></tbody></table></div>
+<h2>Per-task difficulty buckets</h2>
+<div class="scroll"><table>
+<thead><tr><th>Task</th><th>Bucket</th><th>Oracle</th><th>Best pass-rate</th></tr></thead>
+<tbody><tr><td><code>calc_003</code></td><td><span class='pill' style='background:#fbbf2422;color:#fbbf24'>model_breaking</span></td><td>ok</td><td>0%</td></tr><tr><td><code>docs_005</code></td><td><span class='pill' style='background:#f8717122;color:#f87171'>broken</span></td><td>FAIL</td><td>0%</td></tr><tr><td><code>gimp_002</code></td><td><span class='pill' style='background:#34d39922;color:#34d399'>productive</span></td><td>ok</td><td>60%</td></tr><tr><td><code>gmail_001</code></td><td><span class='pill' style='background:#60a5fa22;color:#60a5fa'>too_easy</span></td><td>ok</td><td>100%</td></tr><tr><td><code>gmail_007</code></td><td><span class='pill' style='background:#34d39922;color:#34d399'>productive</span></td><td>ok</td><td>100%</td></tr><tr><td><code>slack_009</code></td><td><span class='pill' style='background:#34d39922;color:#34d399'>productive</span></td><td>ok</td><td>80%</td></tr></tbody></table></div>
+</div>

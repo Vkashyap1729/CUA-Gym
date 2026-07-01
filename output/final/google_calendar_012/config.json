@@ -1,0 +1,18 @@
+{
+  "id": "google_calendar_012",
+  "instruction": "Add Alice and Bob as guests to the \"Design Review\" meeting.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

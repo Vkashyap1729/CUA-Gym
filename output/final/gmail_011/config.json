@@ -1,0 +1,18 @@
+{
+  "id": "gmail_011",
+  "instruction": "Forward the project brief from Marcus to my teammate dana@corp.com, keep Marcus on cc, and label the original as Work.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

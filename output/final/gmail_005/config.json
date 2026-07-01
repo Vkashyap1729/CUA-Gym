@@ -1,0 +1,18 @@
+{
+  "id": "gmail_005",
+  "instruction": "Apply my 'Travel' label to the flight confirmation from SkyJet.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

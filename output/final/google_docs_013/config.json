@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_013",
+  "instruction": "Revoke Bob's access to the \"Salary Bands\" document entirely.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

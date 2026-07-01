@@ -1,0 +1,18 @@
+{
+  "id": "gmail_017",
+  "instruction": "Reply to Bob's invoice email letting him know payment will be sent by Friday.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

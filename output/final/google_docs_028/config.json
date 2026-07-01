@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_028",
+  "instruction": "Make a copy of \"Policy Handbook\", then rename the copy to \"Policy Handbook 2025\".",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

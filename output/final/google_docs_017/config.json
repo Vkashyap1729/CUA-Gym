@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_017",
+  "instruction": "In the \"Press Release\" document, change every occurrence of the placeholder \"ACME\" to \"Globex\".",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

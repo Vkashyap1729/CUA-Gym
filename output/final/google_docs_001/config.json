@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_001",
+  "instruction": "Star the document titled \"Q3 Marketing Plan\" so I can find it quickly later.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

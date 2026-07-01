@@ -1,0 +1,266 @@
+[
+  {
+    "task_id": "google_calendar_001",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Add a new event called \"Dentist Appointment\" on March 18, 2026 from 2:00 PM to 3:00 PM.",
+    "context": "INITIAL: currentDate 2026-03-13T00:00:00.000Z, view 'week'. Calendars c1 Personal (default), c2 Work. Existing events: evt_001 'Team Standup' (c2, 2026-03-13 09:00-09:30, recurring daily) and evt_002 'Lunch with Sarah' (c1, 2026-03-13 12:00-13:00). EXPECTED: a new event appended to events with title 'Dentist Appointment', start 2026-03-18T14:00:00 and end 2026-03-18T15:00:00 (local equivalent), on the default Personal calendar (c1). The two existing events must remain unchanged.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_002",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Delete the \"Lunch with Sarah\" event from my calendar.",
+    "context": "INITIAL: events = evt_001 'Team Standup' (c2, 2026-03-13 09:00-09:30), evt_002 'Lunch with Sarah' (c1, 2026-03-13 12:00-13:00, location 'Downtown Cafe'), evt_003 'Gym Session' (c1, 2026-03-13 18:00-19:00). EXPECTED: evt_002 removed from the events array. evt_001 and evt_003 must remain untouched (these are distractors that share the day).",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_003",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Switch my calendar to Month view.",
+    "context": "INITIAL: view 'week', currentDate 2026-03-13T00:00:00.000Z, several events present (evt_001 'Team Standup', evt_002 'Lunch with Sarah'). EXPECTED: view field changed to 'month'. currentDate, events, and all other fields must remain unchanged.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_004",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Rename the event titled \"Team Standup\" to \"Daily Engineering Sync\".",
+    "context": "INITIAL: events = evt_001 'Team Standup' (c2, 2026-03-13 09:00-09:30, recurring daily, guests alice@example.com/bob@example.com), evt_002 'Lunch with Sarah' (c1). EXPECTED: evt_001.title changed to 'Daily Engineering Sync'; all other fields of evt_001 (time, calendar, guests, recurrence) unchanged. evt_002 untouched.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_005",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Hide all events from my \"Work\" calendar.",
+    "context": "INITIAL: calendars = c1 Personal (visible true), c2 Work (visible true), c3 Family (visible true). Events spread across c1 and c2. EXPECTED: the Work calendar (c2) visible flag set to false. Personal (c1) and Family (c3) visibility unchanged. No events should be deleted.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_006",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Change the location of my \"Project Kickoff\" meeting to \"Conference Room B\".",
+    "context": "INITIAL: events = evt_010 'Project Kickoff' (c2, 2026-03-16 10:00-11:00, location 'Conference Room A'), evt_011 'Sprint Review' (c2, 2026-03-16 14:00-15:00, location 'Conference Room A'). EXPECTED: evt_010.location changed to 'Conference Room B'. evt_011 (a distractor also in Room A) must keep location 'Conference Room A'.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_007",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Jump the calendar to today.",
+    "context": "INITIAL: currentDate 2026-01-10T00:00:00.000Z (calendar is showing January), view 'week'. The system 'today' is 2026-03-13. EXPECTED: currentDate updated to 2026-03-13 (today). view unchanged. events unchanged.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_008",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Collapse the left sidebar so the calendar takes the full width.",
+    "context": "INITIAL: sidebarOpen true, view 'week', events present. EXPECTED: sidebarOpen set to false. No other fields modified.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_009",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Switch the calendar to use 24-hour time format.",
+    "context": "INITIAL: settings.timeFormat '12h', other settings at defaults (weekStart 0, defaultDuration 60, defaultReminder popup 10). EXPECTED: settings.timeFormat changed to '24h'. All other settings sub-keys unchanged.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_010",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Create a new calendar named \"Side Projects\" with the lavender color.",
+    "context": "INITIAL: calendars = c1 Personal, c2 Work, c3 Family. EXPECTED: a new calendar object appended to calendars with name 'Side Projects' and color '#7986CB' (lavender). The three existing calendars must remain unchanged (same ids, names, colors, visibility).",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_calendar_011",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Move my \"1:1 with Manager\" meeting from 9 AM to 4 PM on the same day, keeping it one hour long.",
+    "context": "INITIAL: events = evt_020 '1:1 with Manager' (c2, 2026-03-17 09:00-10:00), evt_021 'Lunch' (c1, 2026-03-17 12:00-13:00). EXPECTED: evt_020 start changed to 2026-03-17 16:00 and end to 2026-03-17 17:00 (duration preserved at 1 hour, same date). evt_021 untouched.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_012",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Add Alice and Bob as guests to the \"Design Review\" meeting.",
+    "context": "INITIAL: events = evt_030 'Design Review' (c2, 2026-03-19 11:00-12:00, guests []), evt_031 'Design Review Prep' (c2, 2026-03-18 15:00-16:00, guests []). EXPECTED: evt_030.guests becomes ['alice@example.com', 'bob@example.com']. evt_031 (similarly named distractor) must keep an empty guest list.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_013",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Make the \"Yoga Class\" event repeat every week.",
+    "context": "INITIAL: events = evt_040 'Yoga Class' (c1, 2026-03-16 07:00-08:00, recurring 'none'), evt_041 'Yoga Class' from a one-off makeup session (c1, 2026-03-19 07:00-08:00, recurring 'none'). EXPECTED: evt_040.recurring changed to 'weekly'. evt_041 (the one-off makeup on a different day) must stay recurring 'none'.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_014",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Change the color of my \"Birthday Party\" event to tomato red.",
+    "context": "INITIAL: events = evt_050 'Birthday Party' (c1, 2026-03-21 18:00-22:00, color '#039BE5'), evt_051 'Dinner Reservation' (c1, 2026-03-21 19:00-20:00, color '#039BE5'). EXPECTED: evt_050.color changed to '#D50000' (tomato). evt_051 must keep its original peacock color '#039BE5'.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_015",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Add a 30-minute popup reminder to the \"Flight to Tokyo\" event.",
+    "context": "INITIAL: events = evt_060 'Flight to Tokyo' (c1, 2026-03-25 06:00-14:00, reminders []), evt_061 'Hotel Check-in' (c1, 2026-03-25 16:00-16:30, reminders [{type popup, minutes 10}]). EXPECTED: evt_060.reminders contains a popup reminder with minutes 30. evt_061's existing reminder must be unchanged.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_016",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Reschedule the \"Quarterly Planning\" meeting to next Monday, March 23rd, keeping the same start time and duration.",
+    "context": "INITIAL: currentDate 2026-03-13. events = evt_070 'Quarterly Planning' (c2, 2026-03-16 13:00-15:00, a Monday), evt_071 'Budget Review' (c2, 2026-03-16 15:30-16:30). EXPECTED: evt_070 start moved to 2026-03-23 13:00 and end to 2026-03-23 15:00 (same 13:00 start, 2-hour duration). evt_071 untouched.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_017",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Create an all-day event titled \"Company Offsite\" on March 27, 2026 on the Work calendar.",
+    "context": "INITIAL: calendars c1 Personal (default), c2 Work. events = evt_080 'Standup' (c2, 2026-03-27 09:00-09:30). EXPECTED: a new event appended with title 'Company Offsite', allDay true, calendarId c2 (Work), spanning 2026-03-27 (start 2026-03-27T00:00, end 2026-03-28T00:00). The existing Standup event must remain.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_018",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Remove Charlie from the guest list of the \"Client Demo\" meeting.",
+    "context": "INITIAL: events = evt_090 'Client Demo' (c2, 2026-03-18 10:00-11:00, guests ['alice@example.com','charlie@example.com','david@example.com']). EXPECTED: evt_090.guests becomes ['alice@example.com','david@example.com'] (only charlie@example.com removed; alice and david must stay).",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_019",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Move the \"Coffee Chat\" event onto my Work calendar instead of Personal.",
+    "context": "INITIAL: calendars c1 Personal, c2 Work. events = evt_100 'Coffee Chat' (calendarId c1, 2026-03-19 09:30-10:00), evt_101 'Personal Errand' (c1, 2026-03-19 11:00-11:30). EXPECTED: evt_100.calendarId changed to 'c2'. evt_101 stays on c1. Times and titles unchanged.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_020",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Delete the recurring \"Old Weekly Sync\" event and create a new \"Team Retro\" event on March 20 from 3 PM to 4 PM.",
+    "context": "INITIAL: events = evt_110 'Old Weekly Sync' (c2, 2026-03-13 16:00-16:30, recurring 'weekly'), evt_111 'Team Standup' (c2, 2026-03-13 09:00-09:30). EXPECTED: evt_110 removed AND a new event 'Team Retro' appended (start 2026-03-20 15:00, end 2026-03-20 16:00). evt_111 must remain untouched.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_021",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Extend the \"Workshop\" event so it ends at 5 PM instead of 3 PM.",
+    "context": "INITIAL: events = evt_120 'Workshop' (c2, 2026-03-24 13:00-15:00), evt_121 'Wrap-up Call' (c2, 2026-03-24 15:30-16:00). EXPECTED: evt_120.end changed to 2026-03-24 17:00 (start stays 13:00). evt_121 untouched (do NOT shift it even though the new end now overlaps it).",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_022",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Set Monday as the first day of the week in calendar settings.",
+    "context": "INITIAL: settings.weekStart 0 (Sunday), timeFormat '12h', defaultDuration 60. EXPECTED: settings.weekStart changed to 1 (Monday). All other settings keys unchanged.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_023",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Add a Google Meet link \"https://meet.google.com/abc-defg-hij\" to the \"Remote Standup\" event.",
+    "context": "INITIAL: events = evt_130 'Remote Standup' (c2, 2026-03-18 09:00-09:15, meetLink ''), evt_131 'In-Person Standup' (c2, 2026-03-19 09:00-09:15, meetLink ''). EXPECTED: evt_130.meetLink set to 'https://meet.google.com/abc-defg-hij'. evt_131 must keep an empty meetLink.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_024",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Delete the \"Holidays\" calendar entirely.",
+    "context": "INITIAL: calendars = c1 Personal, c2 Work, c4 Holidays (color #F4511E). events include evt_140 'National Holiday' (c4) and evt_141 'Work Meeting' (c2). EXPECTED: the Holidays calendar (c4) removed from the calendars array. The Personal and Work calendars must remain. Only the calendar removal is the scored target; do not delete c1 or c2.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_025",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Update the description of the \"Onboarding Session\" to read \"Bring your laptop and ID badge.\"",
+    "context": "INITIAL: events = evt_150 'Onboarding Session' (c2, 2026-03-23 10:00-12:00, description 'TBD'), evt_151 'Onboarding Follow-up' (c2, 2026-03-25 10:00-11:00, description 'TBD'). EXPECTED: evt_150.description changed to 'Bring your laptop and ID badge.' evt_151 must keep its 'TBD' description.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_calendar_026",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "I double-booked Tuesday. Move my \"Vendor Call\" to Wednesday March 18 at the same time, and add Eve as a guest to it.",
+    "context": "INITIAL: events = evt_160 'Vendor Call' (c2, 2026-03-17 Tuesday 14:00-15:00, guests ['frank@example.com']), evt_161 'Team Sync' (c2, 2026-03-17 14:00-14:30). EXPECTED: evt_160 moved to 2026-03-18 14:00-15:00 (same time) AND guests becomes ['frank@example.com','eve@example.com'] (frank kept, eve added). evt_161 stays on Tuesday untouched.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_calendar_027",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Consolidate my two morning workout slots into one: delete the \"Morning Run\" event and extend the \"Gym\" event to start at 6 AM instead of 7 AM.",
+    "context": "INITIAL: events = evt_170 'Morning Run' (c1, 2026-03-16 06:00-06:45), evt_171 'Gym' (c1, 2026-03-16 07:00-08:00), evt_172 'Breakfast Meeting' (c2, 2026-03-16 09:00-10:00). EXPECTED: evt_170 removed AND evt_171.start changed to 2026-03-16 06:00 (end stays 08:00). evt_172 must remain unchanged.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_calendar_028",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Create three back-to-back 30-minute interview slots titled \"Interview - Candidate A\", \"Interview - Candidate B\", and \"Interview - Candidate C\" starting at 1 PM on March 26 on the Work calendar.",
+    "context": "INITIAL: calendars c1 Personal, c2 Work. events = evt_180 'Lunch' (c1, 2026-03-26 12:00-13:00). EXPECTED: three new events appended on calendarId c2: 'Interview - Candidate A' (13:00-13:30), 'Interview - Candidate B' (13:30-14:00), 'Interview - Candidate C' (14:00-14:30), all on 2026-03-26. evt_180 must remain unchanged.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_calendar_029",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Reschedule the \"Board Meeting\" to start one hour earlier, move it to the Family calendar, and change its color to grape purple.",
+    "context": "INITIAL: calendars c2 Work, c3 Family. events = evt_190 'Board Meeting' (c2, 2026-03-24 15:00-16:30, color '#33B679'), evt_191 'Prep Notes' (c2, 2026-03-24 14:00-15:00). EXPECTED: evt_190 start changed to 2026-03-24 14:00 and end 2026-03-24 15:30 (duration 90 min preserved, shifted 1 hour earlier), calendarId changed to 'c3', color changed to '#8E24AA'. evt_191 untouched.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_calendar_030",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "My recurring \"Weekly 1:1\" should now be a one-off. Change it to a non-recurring event and move it to Thursday March 19 at 2 PM.",
+    "context": "INITIAL: events = evt_200 'Weekly 1:1' (c2, 2026-03-17 Tuesday 14:00-14:30, recurring 'weekly'), evt_201 'Skip Level' (c2, 2026-03-17 15:00-15:30, recurring 'none'). EXPECTED: evt_200 start moved to 2026-03-19 14:00 and end 2026-03-19 14:30 (Thursday, 30-min duration kept) AND recurring changed to 'none'. evt_201 untouched.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_calendar_031",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Clean up duplicates: I accidentally created the \"Lunch with Sarah\" event twice on the same day. Delete the duplicate (keep only one), leaving everything else intact.",
+    "context": "INITIAL: events = evt_210 'Lunch with Sarah' (c1, 2026-03-20 12:00-13:00, location 'Downtown Cafe'), evt_211 'Lunch with Sarah' (c1, 2026-03-20 12:00-13:00, location 'Downtown Cafe'), evt_212 'Afternoon Walk' (c1, 2026-03-20 15:00-15:30). EXPECTED: exactly one of the two identical 'Lunch with Sarah' events removed so a single 'Lunch with Sarah' on 2026-03-20 12:00-13:00 remains. evt_212 must remain. Total 'Lunch with Sarah' count goes from 2 to 1.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_calendar_032",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Set up a new event for \"Mom's Birthday Dinner\" on March 28 at 7 PM for 2 hours, put it on the Family calendar, add mom@example.com as a guest and a 1-day-before popup reminder.",
+    "context": "INITIAL: calendars c1 Personal (default), c3 Family. events = evt_220 'Work Deadline' (c2, 2026-03-28 17:00-17:30). EXPECTED: a new event appended with title \"Mom's Birthday Dinner\", calendarId c3 (Family), start 2026-03-28 19:00, end 2026-03-28 21:00, guests including 'mom@example.com', and a reminder {type popup, minutes 1440}. evt_220 must remain unchanged and must NOT be moved to Family.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_calendar_033",
+    "domain": "mock_websites",
+    "app": "google_calendar",
+    "task_instruction": "Hide the Family calendar, switch to Agenda view, and jump the calendar to April 1, 2026.",
+    "context": "INITIAL: calendars = c1 Personal (visible true), c2 Work (visible true), c3 Family (visible true). view 'week', currentDate 2026-03-13T00:00:00.000Z. EXPECTED: c3 Family visible set to false (c1 and c2 stay visible), view changed to 'agenda', and currentDate updated to 2026-04-01. Events array unchanged.",
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_031",
+  "instruction": "Create a new meeting-notes document titled \"All-Hands 2025-06\" and share it with both Alice and Bob as viewers.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

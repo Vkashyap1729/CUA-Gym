@@ -1,0 +1,18 @@
+{
+  "id": "google_calendar_029",
+  "instruction": "Reschedule the \"Board Meeting\" to start one hour earlier, move it to the Family calendar, and change its color to grape purple.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

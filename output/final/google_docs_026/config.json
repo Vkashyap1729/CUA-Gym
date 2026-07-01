@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_026",
+  "instruction": "In \"Conference Agenda\", correct the date from \"March 5\" to \"March 12\" and then resolve the comment that flagged the wrong date.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

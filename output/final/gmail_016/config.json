@@ -1,0 +1,18 @@
+{
+  "id": "gmail_016",
+  "instruction": "Delete the old 'Weekly deals' promo from my inbox \u2014 I don't need it anymore.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

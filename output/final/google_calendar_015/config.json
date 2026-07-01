@@ -1,0 +1,18 @@
+{
+  "id": "google_calendar_015",
+  "instruction": "Add a 30-minute popup reminder to the \"Flight to Tokyo\" event.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

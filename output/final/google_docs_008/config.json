@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_008",
+  "instruction": "Set the editor zoom to 150% for the \"Blueprint\" document.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

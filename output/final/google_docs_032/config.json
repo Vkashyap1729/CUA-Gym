@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_032",
+  "instruction": "Tidy up sharing on \"Vendor List\": Alice should keep editor, Bob should be downgraded to viewer, and Carol should be removed completely.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

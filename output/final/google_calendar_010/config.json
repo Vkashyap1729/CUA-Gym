@@ -1,0 +1,18 @@
+{
+  "id": "google_calendar_010",
+  "instruction": "Create a new calendar named \"Side Projects\" with the lavender color.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

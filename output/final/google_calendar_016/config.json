@@ -1,0 +1,18 @@
+{
+  "id": "google_calendar_016",
+  "instruction": "Reschedule the \"Quarterly Planning\" meeting to next Monday, March 23rd, keeping the same start time and duration.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

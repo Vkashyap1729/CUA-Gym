@@ -1,0 +1,18 @@
+{
+  "id": "gmail_024",
+  "instruction": "Recover the accidentally-trashed message from the client and get it back into the inbox as an unread, starred email, then permanently delete the actual phishing message that's still in trash.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

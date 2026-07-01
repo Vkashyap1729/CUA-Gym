@@ -1,0 +1,18 @@
+{
+  "id": "gmail_007",
+  "instruction": "Draft an email to the vendor procurement@acmesupplies.com requesting an updated price quote for 200 office chairs, but don't send it yet.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

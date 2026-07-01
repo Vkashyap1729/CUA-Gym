@@ -1,0 +1,18 @@
+{
+  "id": "gmail_026",
+  "instruction": "Open and read the message with the subject 'Server maintenance window'.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

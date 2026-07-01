@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_014",
+  "instruction": "Reply to Alice's comment on the \"Release Notes\" doc saying \"Thanks, I'll fix this in the next pass.\"",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

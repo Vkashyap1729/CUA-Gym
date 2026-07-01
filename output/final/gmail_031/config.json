@@ -1,0 +1,18 @@
+{
+  "id": "gmail_031",
+  "instruction": "Clean up the inbox: move all three emails from the recruiter noreply@jobspam.io to trash, and mark the email from your manager as important.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gmail_032",
+  "instruction": "Save a draft email to the whole finance team (ana@company.com and paul@company.com) with subject 'Expense report reminder' reminding them the report is due Friday. Do not send it.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

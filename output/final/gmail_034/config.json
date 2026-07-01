@@ -1,0 +1,18 @@
+{
+  "id": "gmail_034",
+  "instruction": "Reorganize the two flagged project emails: remove the 'Personal' label from both, add the 'Work' label to both, and star the one from the project lead.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

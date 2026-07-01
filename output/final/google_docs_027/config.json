@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_027",
+  "instruction": "Transfer everything from Bob to Alice on \"Shared Plan\": remove Bob's access and instead share with Alice using the same editor permission Bob had.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

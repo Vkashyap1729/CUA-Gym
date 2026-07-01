@@ -1,0 +1,18 @@
+{
+  "id": "gmail_013",
+  "instruction": "Star the email from Alice Smith about the Q4 roadmap so I can find it later.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

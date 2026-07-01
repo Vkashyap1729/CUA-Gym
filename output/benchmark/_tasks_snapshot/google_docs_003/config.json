@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_003",
+  "instruction": "Delete the document called \"Old Draft v1\" \u2014 we don't need it anymore.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

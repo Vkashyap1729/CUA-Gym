@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_015",
+  "instruction": "Add a comment on the \"Architecture Overview\" document asking \"Should we mention the caching layer here?\"",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

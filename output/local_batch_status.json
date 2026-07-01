@@ -1,0 +1,1202 @@
+{
+  "google_calendar_001": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_002": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_003": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_004": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_005": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_006": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_008": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_009": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_010": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_011": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_012": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_013": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_014": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_015": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_016": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_017": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_018": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_019": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_020": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_021": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_022": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_023": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_024": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_025": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_026": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_027": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_028": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_029": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_030": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_031": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_032": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_033": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_001": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_002": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_003": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_004": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_005": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_006": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_007": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_008": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_009": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_010": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_011": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_012": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_013": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_014": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_015": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_016": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_017": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_018": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_019": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_020": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_021": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_022": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_023": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_024": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_025": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_026": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_027": {
+    "status": "completed",
+    "rounds": 3,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_028": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_029": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_030": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_031": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_032": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_docs_033": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_001": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_002": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_003": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_004": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_005": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_006": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_007": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_008": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_009": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_010": {
+    "status": "completed",
+    "rounds": 3,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_011": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_012": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_013": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_014": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_015": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_016": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_017": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_018": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_019": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_020": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_021": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_022": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_023": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_024": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_025": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_026": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_027": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_028": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_029": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_030": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_031": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_032": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_033": {
+    "status": "completed",
+    "rounds": 2,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "gmail_034": {
+    "status": "completed",
+    "rounds": 1,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  },
+  "google_calendar_007": {
+    "status": "completed",
+    "rounds": 5,
+    "pass": true,
+    "reward_initial": 0.0,
+    "reward_golden": 1.0,
+    "forbidden_warnings": [],
+    "steps": [
+      "[initial] reward.py -> REWARD=0.0 (expected 0.0)",
+      "[golden] reward.py -> REWARD=1.0 (expected 1.0)"
+    ]
+  }
+}

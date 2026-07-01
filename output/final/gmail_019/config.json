@@ -1,0 +1,18 @@
+{
+  "id": "gmail_019",
+  "instruction": "Compose and send a new email to hr@company.com requesting Friday off for a doctor's appointment.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

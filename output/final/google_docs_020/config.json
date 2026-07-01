@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_020",
+  "instruction": "Create a new document titled \"Onboarding Checklist\" containing a heading \"Onboarding\" and a paragraph \"Complete all items before day one.\"",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

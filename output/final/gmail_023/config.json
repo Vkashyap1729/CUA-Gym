@@ -1,0 +1,18 @@
+{
+  "id": "gmail_023",
+  "instruction": "Go through the inbox and file every message from a company.com colleague under the Work label, marking each as read; leave external-sender emails alone.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

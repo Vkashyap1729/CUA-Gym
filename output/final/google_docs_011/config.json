@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_011",
+  "instruction": "Share the \"Launch Checklist\" with Bob Smith and give him editor access.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

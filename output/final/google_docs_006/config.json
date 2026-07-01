@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_006",
+  "instruction": "Unstar the \"Vacation Itinerary\" document \u2014 I no longer need it pinned.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

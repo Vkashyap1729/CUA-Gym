@@ -1,0 +1,18 @@
+{
+  "id": "gmail_012",
+  "instruction": "Triage the three invoice emails from Finance: star the overdue one, move the already-paid one to trash, and leave the pending one exactly as it is.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

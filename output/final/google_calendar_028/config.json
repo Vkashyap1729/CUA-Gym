@@ -1,0 +1,18 @@
+{
+  "id": "google_calendar_028",
+  "instruction": "Create three back-to-back 30-minute interview slots titled \"Interview - Candidate A\", \"Interview - Candidate B\", and \"Interview - Candidate C\" starting at 1 PM on March 26 on the Work calendar.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

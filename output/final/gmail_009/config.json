@@ -1,0 +1,18 @@
+{
+  "id": "gmail_009",
+  "instruction": "Flag the contract email from Legal as important and star it so it stands out.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

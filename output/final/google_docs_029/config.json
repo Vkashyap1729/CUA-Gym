@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_029",
+  "instruction": "On the \"Recipe Collection\" document, add a comment that says \"Add prep time for each recipe\" and quote the heading \"Recipes\" it refers to.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

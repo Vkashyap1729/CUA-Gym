@@ -1,0 +1,18 @@
+{
+  "id": "gmail_003",
+  "instruction": "That promotional email from ShopMart is junk \u2014 move it to trash.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

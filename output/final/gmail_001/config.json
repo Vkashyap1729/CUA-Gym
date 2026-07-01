@@ -1,0 +1,18 @@
+{
+  "id": "gmail_001",
+  "instruction": "Star the email from Alice Chen about the quarterly budget so I can find it later.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

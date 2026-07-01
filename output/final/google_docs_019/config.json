@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_019",
+  "instruction": "Delete the spam comment Bob posted on the \"Feedback Form\" document.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

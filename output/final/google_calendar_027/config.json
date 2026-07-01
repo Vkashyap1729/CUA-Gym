@@ -1,0 +1,18 @@
+{
+  "id": "google_calendar_027",
+  "instruction": "Consolidate my two morning workout slots into one: delete the \"Morning Run\" event and extend the \"Gym\" event to start at 6 AM instead of 7 AM.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

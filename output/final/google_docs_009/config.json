@@ -1,0 +1,18 @@
+{
+  "id": "google_docs_009",
+  "instruction": "Turn on link sharing for \"Customer FAQ\" so anyone with the link can view it.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

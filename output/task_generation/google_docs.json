@@ -1,0 +1,266 @@
+[
+  {
+    "task_id": "google_docs_001",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Star the document titled \"Q3 Marketing Plan\" so I can find it quickly later.",
+    "context": "INITIAL: documents map contains doc-1 \"Q3 Marketing Plan\" (owner user-1, starred=false), doc-2 \"Budget Forecast\" (owner user-1, starred=true), doc-3 \"Team Roster\" (owner user-1, starred=false). EXPECTED: documents[doc-1].starred becomes true. doc-2 stays starred=true and doc-3 stays starred=false (distractors must remain unchanged). No other field altered besides doc-1.updated.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_002",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Rename my \"Untitled document\" to \"Sprint Retrospective Notes\".",
+    "context": "INITIAL: documents has doc-1 \"Untitled document\" (owner user-1), doc-2 \"Sprint Planning\" (owner user-1), doc-3 \"Project Proposal\" (owner user-1). EXPECTED: documents[doc-1].title == \"Sprint Retrospective Notes\". doc-2 and doc-3 titles unchanged. Only doc-1 title (and its updated timestamp) changes.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_003",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Delete the document called \"Old Draft v1\" — we don't need it anymore.",
+    "context": "INITIAL: documents has doc-1 \"Old Draft v1\" (owner user-1), doc-2 \"Old Draft v2\" (owner user-1), doc-3 \"Final Report\" (owner user-1). comment-1 belongs to doc-1, comment-2 belongs to doc-2. EXPECTED: doc-1 removed from documents map; comment-1 removed from comments array. doc-2 \"Old Draft v2\" and doc-3 must remain; comment-2 must remain.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_004",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Switch the document list to list view instead of the grid of thumbnails.",
+    "context": "INITIAL: ui.documentListView == \"grid\". documents has doc-1 \"Notes\", doc-2 \"Tasks\" (both owner user-1). EXPECTED: ui.documentListView == \"list\". No documents added, removed, or modified.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_005",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Create a brand-new blank document titled \"Weekly Standup Agenda\".",
+    "context": "INITIAL: documents has doc-1 \"Roadmap\" and doc-2 \"Changelog\" (both owner user-1). EXPECTED: documents gains one new entry whose title == \"Weekly Standup Agenda\", ownerId == user-1. The two existing documents remain untouched. Exactly one new document is created.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_006",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Unstar the \"Vacation Itinerary\" document — I no longer need it pinned.",
+    "context": "INITIAL: documents has doc-1 \"Vacation Itinerary\" (owner user-1, starred=true), doc-2 \"Expense Report\" (owner user-1, starred=true), doc-3 \"Reading List\" (owner user-1, starred=false). EXPECTED: documents[doc-1].starred becomes false. doc-2 stays starred=true, doc-3 stays starred=false.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_007",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Resolve the comment Alice left on the \"Design Spec\" document.",
+    "context": "INITIAL: documents has doc-1 \"Design Spec\" (owner user-1). comments: comment-1 on doc-1 by user-2 (Alice Chen), resolved=false; comment-2 on doc-1 by user-3 (Bob Smith), resolved=false. EXPECTED: comment-1.resolved becomes true. comment-2 remains resolved=false (Bob's comment must not be touched).",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_008",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Set the editor zoom to 150% for the \"Blueprint\" document.",
+    "context": "INITIAL: documents has doc-1 \"Blueprint\" (owner user-1). ui.currentDocId == \"doc-1\", ui.zoom == 100. EXPECTED: ui.zoom == 150. currentDocId stays doc-1; no document content changes.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_009",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Turn on link sharing for \"Customer FAQ\" so anyone with the link can view it.",
+    "context": "INITIAL: documents has doc-1 \"Customer FAQ\" (owner user-1, linkSharing {enabled:false, permission:\"viewer\"}), doc-2 \"Internal Wiki\" (owner user-1, linkSharing {enabled:false, permission:\"viewer\"}). EXPECTED: documents[doc-1].linkSharing.enabled == true, permission stays \"viewer\". doc-2.linkSharing.enabled must remain false.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_010",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Make a copy of the \"Contract Template\" document.",
+    "context": "INITIAL: documents has doc-1 \"Contract Template\" (owner user-1, content \"<h1>Contract</h1><p>Terms and conditions.</p>\"), doc-2 \"Invoice\" (owner user-1). EXPECTED: documents gains a new entry with a new ID whose title == \"Copy of Contract Template\", same content as doc-1, ownerId user-1. Original doc-1 unchanged; doc-2 untouched. Exactly one copy created.",
+    "difficulty": "easy"
+  },
+  {
+    "task_id": "google_docs_011",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Share the \"Launch Checklist\" with Bob Smith and give him editor access.",
+    "context": "INITIAL: documents has doc-1 \"Launch Checklist\" (owner user-1, sharedWith [{userId:user-2, permission:editor}]). users include user-2 Alice Chen, user-3 Bob Smith. EXPECTED: documents[doc-1].sharedWith gains {userId:user-3, permission:editor}; the existing Alice editor entry remains. No duplicate entries.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_012",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Alice currently has editor rights on \"Financial Model\" — downgrade her to view-only.",
+    "context": "INITIAL: documents has doc-1 \"Financial Model\" (owner user-1, sharedWith [{userId:user-2, permission:editor},{userId:user-3, permission:commenter}]). EXPECTED: the user-2 (Alice) entry permission becomes \"viewer\"; the user-3 (Bob) commenter entry stays unchanged. No entries added or removed.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_013",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Revoke Bob's access to the \"Salary Bands\" document entirely.",
+    "context": "INITIAL: documents has doc-1 \"Salary Bands\" (owner user-1, sharedWith [{userId:user-2, permission:viewer},{userId:user-3, permission:editor}]). EXPECTED: the user-3 (Bob) entry is removed from sharedWith; the user-2 (Alice) viewer entry remains. sharedWith ends with exactly one entry.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_014",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Reply to Alice's comment on the \"Release Notes\" doc saying \"Thanks, I'll fix this in the next pass.\"",
+    "context": "INITIAL: documents has doc-1 \"Release Notes\" (owner user-1). comments: comment-1 on doc-1 by user-2 (Alice), unresolved, replies=[]. EXPECTED: comment-1.replies gains exactly one reply by user-1 with content matching \"Thanks, I'll fix this in the next pass.\" comment-1.resolved stays false. No new top-level comment created.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_015",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Add a comment on the \"Architecture Overview\" document asking \"Should we mention the caching layer here?\"",
+    "context": "INITIAL: documents has doc-1 \"Architecture Overview\" (owner user-1, content includes a paragraph about the system). comments array is empty. EXPECTED: comments gains exactly one new Comment on doc-1 authored by user-1 with content matching the question about the caching layer, resolved=false. Document content itself unchanged.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_016",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Change the editor to viewing (read-only) mode while I review the \"Legal Terms\" document.",
+    "context": "INITIAL: documents has doc-1 \"Legal Terms\" (owner user-1). ui.currentDocId == doc-1, ui.viewMode == \"editing\". EXPECTED: ui.viewMode == \"viewing\". Document content and currentDocId unchanged.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_017",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "In the \"Press Release\" document, change every occurrence of the placeholder \"ACME\" to \"Globex\".",
+    "context": "INITIAL: documents has doc-1 \"Press Release\" (owner user-1, content \"<h1>ACME Launches Product</h1><p>ACME today announced its new line. ACME's CEO commented on the news.</p>\"). EXPECTED: documents[doc-1].content has all three \"ACME\" occurrences replaced with \"Globex\" (title heading and both body mentions), preserving surrounding text and HTML structure. No \"ACME\" remains.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_018",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Append a closing line \"Prepared by the Operations team.\" as a new paragraph at the end of the \"Runbook\" document.",
+    "context": "INITIAL: documents has doc-1 \"Runbook\" (owner user-1, content \"<h1>Runbook</h1><p>Step 1: restart the service.</p><p>Step 2: verify health checks.</p>\"). EXPECTED: documents[doc-1].content ends with a new paragraph containing \"Prepared by the Operations team.\" while all existing content (heading and both steps) is preserved in order.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_019",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Delete the spam comment Bob posted on the \"Feedback Form\" document.",
+    "context": "INITIAL: documents has doc-1 \"Feedback Form\" (owner user-1). comments: comment-1 on doc-1 by user-2 (Alice, legitimate, \"Looks good to me\"), comment-2 on doc-1 by user-3 (Bob, the spam, \"BUY CHEAP STUFF NOW\"). EXPECTED: comment-2 removed from comments; comment-1 remains. comments array has exactly one entry left.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_020",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Create a new document titled \"Onboarding Checklist\" containing a heading \"Onboarding\" and a paragraph \"Complete all items before day one.\"",
+    "context": "INITIAL: documents has doc-1 \"HR Policies\" (owner user-1). EXPECTED: documents gains a new entry titled \"Onboarding Checklist\", ownerId user-1, with content that includes an \"Onboarding\" heading and a paragraph containing \"Complete all items before day one.\" doc-1 untouched. Exactly one new document.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_021",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Re-open (unresolve) the comment on \"Bug Triage\" because the issue came back.",
+    "context": "INITIAL: documents has doc-1 \"Bug Triage\" (owner user-1). comments: comment-1 on doc-1 by user-2, resolved=true; comment-2 on doc-1 by user-3, resolved=true. The task refers to the comment thread about the recurring bug — comment-1. EXPECTED: comment-1.resolved becomes false; comment-2 stays resolved=true.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_022",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Lower the link-sharing permission on \"Public Roadmap\" from editor down to commenter — people should comment but not edit.",
+    "context": "INITIAL: documents has doc-1 \"Public Roadmap\" (owner user-1, linkSharing {enabled:true, permission:\"editor\"}). EXPECTED: documents[doc-1].linkSharing.permission == \"commenter\", enabled stays true. No other document or field changes.",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_023",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Star both \"Q1 OKRs\" and \"Q2 OKRs\" so the quarterly goal docs stay at the top.",
+    "context": "INITIAL: documents has doc-1 \"Q1 OKRs\" (starred=false), doc-2 \"Q2 OKRs\" (starred=false), doc-3 \"Q3 OKRs\" (starred=false) — all owner user-1. EXPECTED: doc-1.starred and doc-2.starred both become true; doc-3 stays starred=false (must NOT be starred).",
+    "difficulty": "medium"
+  },
+  {
+    "task_id": "google_docs_024",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Share \"Investor Deck Notes\" with Alice as a commenter and turn on link sharing set to viewer at the same time.",
+    "context": "INITIAL: documents has doc-1 \"Investor Deck Notes\" (owner user-1, sharedWith [], linkSharing {enabled:false, permission:\"viewer\"}). users include user-2 Alice Chen. EXPECTED: documents[doc-1].sharedWith contains {userId:user-2, permission:commenter}; linkSharing.enabled == true with permission \"viewer\". Both changes applied; no extra share entries.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_025",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Clean up the \"Archive\" workspace: delete \"Draft A\" and \"Draft B\", but keep \"Draft C\".",
+    "context": "INITIAL: documents has doc-1 \"Draft A\", doc-2 \"Draft B\", doc-3 \"Draft C\", doc-4 \"Master Index\" — all owner user-1. comment-1 belongs to doc-1, comment-2 belongs to doc-3. EXPECTED: doc-1 and doc-2 removed from documents; doc-3 and doc-4 remain. comment-1 (on deleted doc-1) removed; comment-2 (on doc-3) remains.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_026",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "In \"Conference Agenda\", correct the date from \"March 5\" to \"March 12\" and then resolve the comment that flagged the wrong date.",
+    "context": "INITIAL: documents has doc-1 \"Conference Agenda\" (owner user-1, content \"<h1>Conference Agenda</h1><p>The event takes place on March 5 in Hall B.</p>\"). comments: comment-1 on doc-1 by user-2, content \"The date is wrong, should be March 12\", resolved=false. EXPECTED: documents[doc-1].content has \"March 5\" replaced with \"March 12\" (rest of paragraph preserved); comment-1.resolved becomes true.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_027",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Transfer everything from Bob to Alice on \"Shared Plan\": remove Bob's access and instead share with Alice using the same editor permission Bob had.",
+    "context": "INITIAL: documents has doc-1 \"Shared Plan\" (owner user-1, sharedWith [{userId:user-3, permission:editor}]). users include user-2 Alice Chen, user-3 Bob Smith. Alice is NOT yet in sharedWith. EXPECTED: documents[doc-1].sharedWith no longer contains user-3; it contains {userId:user-2, permission:editor}. Final sharedWith has exactly one entry (Alice as editor).",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_028",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Make a copy of \"Policy Handbook\", then rename the copy to \"Policy Handbook 2025\".",
+    "context": "INITIAL: documents has doc-1 \"Policy Handbook\" (owner user-1, content \"<h1>Policy Handbook</h1><p>All company policies.</p>\"), doc-2 \"Org Chart\" (owner user-1). EXPECTED: documents gains exactly one new entry (new ID) whose title == \"Policy Handbook 2025\" with the same content as doc-1, owner user-1. Original doc-1 keeps title \"Policy Handbook\" and is unchanged; doc-2 untouched.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_029",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "On the \"Recipe Collection\" document, add a comment that says \"Add prep time for each recipe\" and quote the heading \"Recipes\" it refers to.",
+    "context": "INITIAL: documents has doc-1 \"Recipe Collection\" (owner user-1, content \"<h1>Recipes</h1><p>Pasta, salad, and soup.</p>\"). comments array empty. EXPECTED: comments gains exactly one Comment on doc-1 by user-1, content matching \"Add prep time for each recipe\", quotedText == \"Recipes\", resolved=false. Document content unchanged.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_030",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Reply \"Done — updated in the latest version.\" to Alice's comment on \"Translation Strings\" and then mark that comment as resolved.",
+    "context": "INITIAL: documents has doc-1 \"Translation Strings\" (owner user-1). comments: comment-1 on doc-1 by user-2 (Alice), content \"Missing the French strings\", resolved=false, replies=[]. EXPECTED: comment-1.replies gains exactly one reply by user-1 with content matching \"Done — updated in the latest version.\" AND comment-1.resolved becomes true. No new top-level comment.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_031",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Create a new meeting-notes document titled \"All-Hands 2025-06\" and share it with both Alice and Bob as viewers.",
+    "context": "INITIAL: documents has doc-1 \"Last All-Hands\" (owner user-1). users include user-2 Alice Chen, user-3 Bob Smith. EXPECTED: documents gains exactly one new entry titled \"All-Hands 2025-06\", owner user-1, with sharedWith containing both {userId:user-2, permission:viewer} and {userId:user-3, permission:viewer}. doc-1 untouched.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_032",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Tidy up sharing on \"Vendor List\": Alice should keep editor, Bob should be downgraded to viewer, and Carol should be removed completely.",
+    "context": "INITIAL: documents has doc-1 \"Vendor List\" (owner user-1, sharedWith [{userId:user-2, permission:editor},{userId:user-3, permission:editor},{userId:user-4, permission:commenter}]). users include user-2 Alice, user-3 Bob, user-4 Carol (carol@example.com). EXPECTED: sharedWith ends with exactly two entries — {userId:user-2, permission:editor} (unchanged) and {userId:user-3, permission:viewer} (downgraded); the user-4 (Carol) entry is removed.",
+    "difficulty": "hard"
+  },
+  {
+    "task_id": "google_docs_033",
+    "domain": "mock_websites",
+    "app": "google_docs",
+    "task_instruction": "Disable link sharing on \"Confidential Memo\" and also remove the one external collaborator so only the owner can access it.",
+    "context": "INITIAL: documents has doc-1 \"Confidential Memo\" (owner user-1, linkSharing {enabled:true, permission:\"editor\"}, sharedWith [{userId:user-2, permission:viewer}]). EXPECTED: documents[doc-1].linkSharing.enabled becomes false (permission value may stay \"editor\" but enabled must be false) AND sharedWith becomes empty (user-2 entry removed). Document content and title unchanged.",
+    "difficulty": "hard"
+  }
+]

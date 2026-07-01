@@ -1,0 +1,18 @@
+{
+  "id": "gmail_020",
+  "instruction": "Archive every email in my inbox from the domain @newsletters.co, and leave everything else in the inbox.",
+  "app_type": "mock_websites",
+  "config": [
+    {
+      "type": "execute",
+      "command": [
+        "python3",
+        "initial_setup.py"
+      ]
+    }
+  ],
+  "evaluator": {
+    "type": "python",
+    "url": "reward.py"
+  }
+}

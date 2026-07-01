@@ -1,0 +1,38 @@
+{
+  "n_tasks": 4,
+  "n_pass": 4,
+  "results": [
+    {
+      "task_id": "gmail_001",
+      "ok": true,
+      "reward_initial": 0.0,
+      "reward_golden": 1.0,
+      "forbidden_warnings": [],
+      "error": null
+    },
+    {
+      "task_id": "gmail_002",
+      "ok": true,
+      "reward_initial": 0.0,
+      "reward_golden": 1.0,
+      "forbidden_warnings": [],
+      "error": null
+    },
+    {
+      "task_id": "google_calendar_001",
+      "ok": true,
+      "reward_initial": 0.0,
+      "reward_golden": 1.0,
+      "forbidden_warnings": [],
+      "error": null
+    },
+    {
+      "task_id": "google_docs_001",
+      "ok": true,
+      "reward_initial": 0.0,
+      "reward_golden": 1.0,
+      "forbidden_warnings": [],
+      "error": null
+    }
+  ]
+}
