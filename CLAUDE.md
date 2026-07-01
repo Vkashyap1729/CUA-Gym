@@ -39,6 +39,8 @@ USER PROMPT
 | `scripts/batch_orchestrator.py` | Async driver; one orchestrator run per task; resumable via `output/batch_status.json` |
 | `scripts/env_cli.py` | CLI over `utils.env.Env`; how agents drive the VM (run-python, upload, screenshot, …) |
 | `scripts/materialize_dataset_urls.py` | Swaps `__CUA_GYM_*_URL__` placeholders in released dataset bundles |
+| `scripts/local/` | **Local web-only pipeline (no VM/Aliyun)** for mock-website tasks; see `scripts/local/README.md` |
+| `scripts/benchmark/` | **Model-benchmarking harness** — runs Claude/OpenAI computer-use models against `output/final/` tasks and classifies each (Broken/Model-breaking/Too-easy/Productive) via an oracle control + per-model pass-rates. Web tasks run REAL GUI rollouts locally via Playwright/Chromium (`web_backend.py`, no Aliyun); desktop tasks use the VM (`env_backend.VMBackend`). Reports: `index.html` (Overview + Deep Dive trajectory viewer), `report.html`, `report_detail.html`. See `scripts/benchmark/README.md` |
 | `utils/env.py` | VM lifecycle (Aliyun ECS); talks HTTP to an agent on the VM at `:5000` |
 | `utils/llm_utils.py` | Cached, provider-agnostic LLM layer (OpenAI + Claude) |
 | `utils/reward_judge.py` | **Locked-down** LLM/vision judge deployed to the VM (`/tmp/reward_judge.py`) so rewards can't cheat |
@@ -52,7 +54,10 @@ USER PROMPT
 1. **State injection** — a task ships its own JSON initial state + `reward.py`, so one mock hosts unlimited task-worlds with no code change.
 2. **Session isolation** — every URL carries `?sid=<id>`, so parallel RL workers on the same mock never collide.
 
-Unified HTTP state API (every mock): `POST /post?sid=` (`set` = current+initial, `set_current` = current only, `reset`), `GET /go?sid=` → `{initial_state, current_state, state_diff}`, `GET /state?sid=`, `POST /upload?sid=`. The `sid` flows via `/tmp/task_web_sid` across `initial_setup.py` → `golden_patch.py` → `reward.py`.
+Unified HTTP state API (every mock): `POST /post?sid=` (`set` = current+initial, `set_current` = current only, `reset`), `GET /go?sid=` → `{initial_state, current_state, state_diff}`, `GET /state?sid=`, `POST /upload?sid=`. The `sid` flows via `/tmp/task_web_sid` across `initial_setup.py` → `golden_patch.py` → `reward.py`. The state API is a **Vite middleware in each mock's `vite.config.js`** (both dev + preview), so `npm run dev` alone serves it — state persists to `<mock>/.mock-states/<sid>.json`.
+
+### Local web-only pipeline (`scripts/local/`) — run the loop with NO VM
+For mock-website tasks only, the whole adversarial loop runs locally (no Aliyun/OSWorld). Entry point: `scripts/local/generate.py` — config-driven (`config.json`: `apps=[{name,count,port}]`, `max_rounds`, `judge_model`), per app it auto-hosts the mock (`npm run dev`), generates `count` specs via `claude -p` → `output/task_generation/<app>.json`, runs the loop, exports `output/final/<id>/` (CUA-Gym-native). Under the hood `run_local_pipeline.py` drives `claude -p` (NOT the VM-coupled `--agent` prompts) to write the 3 scripts under an info-barrier (setup→`output/adversarial/`, reward→`output/reward_sandbox/`), and `local_verify.py` runs them as local subprocesses against the mock with two `sid`s (the two envs), checking `reward(initial)==0 & reward(golden)==1`. It localizes scripts at run time (`cua-gym-*.xlang.ai`→local URL, `google-chrome`→`true`) and uses `scripts/local/reward_judge.py` (default gpt-4o, env `CUA_GYM_JUDGE_MODEL`) instead of the locked-down judge. Auth: the driver **loads `.env`** (overriding the shell) so headless `claude` uses the `.env` `ANTHROPIC_API_KEY`; `OPENAI_API_KEY` powers the judge. Needs `.venv-local` (requests+openai) + the `claude` CLI. An app is usable if it has BOTH `hub/websites/<app>_mock` and `schemas/<app>_mock.md` (gmail, google_calendar, google_docs, slack, github, notion, … ✓). Desktop domains still require the VM. See `scripts/local/README.md`.
 
 ## CONVENTIONS & INVARIANTS (break one → tasks silently fail verification)
 
