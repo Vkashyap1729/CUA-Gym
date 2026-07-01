@@ -1,0 +1,10 @@
+{
+  "max_rounds": 5,
+  "judge_model": "gpt-4o",
+  "apps": [
+    { "name": "gmail",           "count": 34, "port": 5173 },
+    { "name": "google_calendar", "count": 33,  "port": 5174 },
+    { "name": "google_docs", "count": 33,  "port": 5175 }
+  ],
+  "_notes": "Edit 'apps' to choose types + counts. 'name' must match hub/websites/<name>_mock AND .claude/skills/mock_websites/schemas/<name>_mock.md. Each app gets its own port. judge_model is the OpenAI model reward.py uses for subjective checks (gpt-4o-mini is cheaper)."
+}
